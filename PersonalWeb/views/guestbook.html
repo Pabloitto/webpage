@@ -1,0 +1,67 @@
+<script type="text/javascript" src="_scripts/js/guestbook.js"></script>
+<div>
+	My Guestbook
+	<div class="spaceDiv">
+	<form id="formGuest" action="core/guestbook.php?action=insert" method="post">
+		<table>
+			<tr>
+				<td>
+					Name:
+				</td>
+				<td>
+					<input type="text" id="txtName" name="txtName" title="The name"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Last name:
+				</td>
+				<td>
+					<input type="text" id="txtLastName" name="txtLastName" title="The last name"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Email:
+				</td>
+				<td>
+					<input type="text" id="txtEmail" name="txtEmail" title="The email"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Country:
+				</td>
+				<td>
+					<input type="text" id="txtCountry" name="txtCountry" title="Your country"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Comments:
+				</td>
+				<td>
+					<textarea rows="5" cols="17" id="txtComments" name="txtComments" title="A comment"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+				
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" id="btnSign" value="Sign"/>
+				</td>
+				<td>
+					<input type="button" id="btnClear" value="Clear"/>
+				</td>
+			</tr>
+		</table>
+	</form>
+	</div>
+	<div class="spaceDiv">
+		<select id="cboComments" multiple="multiple" style="width: 200px;height: 200px;" size="1"></select>
+	</div>
+</div>
